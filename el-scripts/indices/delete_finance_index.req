@@ -1,0 +1,2 @@
+DEL http://{{HOST}}:{{PORT}}/finance?pretty HTTP/1.1
+Accept: application/json

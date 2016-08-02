@@ -1,0 +1,2 @@
+GET http://{{HOST}}:{{PORT}}/_cat/indices?v HTTP/1.1
+Accept: application/json

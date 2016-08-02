@@ -1,0 +1,17 @@
+POST http://{{HOST}}:{{PORT}}/finance/snapshot?pretty HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ticker": "F",
+  "date": "2016-08-01T04:05:15Z",
+  "sector": "Industrials",
+  "dow": false,
+  "name": "Ford Motor Company",
+  "price": "13",
+  "price_change": "0.01",
+  "price_change_percent": "0.03",
+  "dividend": "0.15",
+  "dividend_yield": "3.5",
+  "pe": "8.4"
+}

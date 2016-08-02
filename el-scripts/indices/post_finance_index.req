@@ -1,0 +1,23 @@
+POST http://{{HOST}}:{{PORT}}/finance?pretty HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "mappings": {
+    "snapshot": {
+      "properties": {
+        "date": { "type": "date" },
+        "ticker": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "float" },
+        "price_change": { "type": "float" },
+        "price_change_percent": { "type": "float" },
+        "sector": { "type": "string" },
+        "dow": { "type": "boolean" },
+        "dividend": { "type": "float" },
+        "dividend_yield": { "type": "float" },
+        "pe": { "type": "float" }
+      }
+    }
+  }
+}
