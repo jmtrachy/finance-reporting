@@ -42,5 +42,9 @@ echo "Starting kibana"
 sleep 1.5
 service kibana start
 
+echo "Adding iptable for port 80"
+sleep 1.5
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 5601
+
 echo "exiting bootstrap...."
 echo "Don't forget to vi /etc/elasticsearch/elasticsearch.yml, uncomment network.host and set it to _eth0_"
